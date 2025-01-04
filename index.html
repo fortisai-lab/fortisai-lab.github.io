@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fortis</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-shield"></div>
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+    <div class="blob blob-4"></div>
+    <!-- <div class="site-background">
+        Stars will be added here by JavaScript
+    </div> -->
+    <div class="content-wrapper">
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <img src="logo.png" alt="Fortis AI Logo">
+                </div>
+                <div class="nav-links">
+                    <a href="#buy">Buy</a>
+                    <a href="#features">Features</a>
+                    <a href="#why">Why Fortis</a>
+                    <a href="#faq">FAQ</a>
+                </div>
+            </div>
+        </nav>
+
+        <header class="hero">
+            <div class="container">
+                <h1>FORTIS</h1>
+                <p>Unleash Unstoppable Trading Power</p>
+                <div class="cta-group">
+                    <a href="#buy" class="primary-button">
+                        <i class="fas fa-fire"></i>
+                        <span>Claim Your Power</span>
+                    </a>
+                    <a href="#" class="secondary-button">
+                        <i class="fab fa-telegram"></i>
+                        <span>Join The Legion</span>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <section id="buy" class="how-to-buy">
+            <div class="container">
+                <h2 class="section-title">Access Fortis</h2>
+                <p class="section-description">Secure your position in the future of trading</p>
+                
+                <div class="access-card">
+                    <div class="requirements-grid">
+                        <div class="requirement-item">
+                            <div class="requirement-icon">
+                                <i class="fas fa-coins"></i>
+                            </div>
+                            <div class="requirement-text">
+                                <h3>Required Holdings</h3>
+                                <p>$100 USDC in Fortis tokens</p>
+                            </div>
+                        </div>
+                        <div class="requirement-item">
+                            <div class="requirement-icon">
+                                <i class="fas fa-wallet"></i>
+                            </div>
+                            <div class="requirement-text">
+                                <h3>Supported Wallet</h3>
+                                <p>Any Solana-Compatible Wallet</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contract-card">
+                        <div class="contract-header">
+                            <i class="fas fa-key"></i>
+                            <h3>Contract Address</h3>
+                        </div>
+                        <div class="contract-address">
+                            <code>F9TdzTUXPN3hEB7Zyfn4qHc8PyTDZCkarrGTGE9opump</code>
+                            <button class="copy-button" onclick="copyAddress()">
+                                <i class="fas fa-copy"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="action-buttons">
+                        <a href="https://raydium.io/swap/?inputMint=sol&outputMint=F9TdzTUXPN3hEB7Zyfn4qHc8PyTDZCkarrGTGE9opump" class="primary-button">
+                            <i class="fas fa-rocket"></i>
+                            <span>Trade on Raydium</span>
+                        </a>
+                        <a href="https://dexscreener.com/solana/F9TdzTUXPN3hEB7Zyfn4qHc8PyTDZCkarrGTGE9opump" class="secondary-button">
+                            <i class="fas fa-chart-line"></i>
+                            <span>View Chart</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <div class="container">
+                <h2 class="section-title">Dominate The Market</h2>
+                <div class="feature-grid">
+                    <div class="feature-card" data-parallax="0.1">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>Conquer Rankings</h3>
+                        <p>Dominate Dexscreener rankings and establish your project's supremacy</p>
+                    </div>
+                    <div class="feature-card" data-parallax="0.15">
+                        <i class="fas fa-wave-square"></i>
+                        <h3>Overwhelming Force</h3>
+                        <p>Unleash up to 100 transactions per second - Crush the competition!</p>
+                    </div>
+                    <div class="feature-card" data-parallax="0.2">
+                        <i class="fas fa-users"></i>
+                        <h3>Army of Holders</h3>
+                        <p>Build an unstoppable army of holders to strengthen your position</p>
+                    </div>
+                    <div class="feature-card" data-parallax="0.25">
+                        <i class="fas fa-shower"></i>
+                        <h3>Sol Washer</h3>
+                        <p>"Clean" your sol through public liquidity pools, removing any connection on Bubblemaps</p>
+                    </div>
+                    <div class="feature-card" data-parallax="0.3">
+                        <i class="fas fa-rocket"></i>
+                        <h3>Pump.fun Bumpit</h3>
+                        <p>Bump your token to stay on top of pump.fun discovery page</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="why" class="why-Fortis">
+            <div class="container">
+                <div class="why-content">
+                    <div class="why-header">
+                        <h2>The <span class="highlight">Arsenal</span> of Fortis</h2>
+                        <h3 class="why-subtitle">Dominate. Conquer. Prevail.</h3>
+                    </div>
+                    
+                    <div class="stats-grid">
+                        <div class="stat-card" data-parallax="0.15">
+                            <div class="stat-value">100</div>
+                            <div class="stat-label">TPS</div>
+                            <p class="stat-description">Unstoppable Transaction Power</p>
+                        </div>
+                        <div class="stat-card" data-parallax="0.2">
+                            <div class="stat-value">10x</div>
+                            <div class="stat-label">Force Multiplier</div>
+                            <p class="stat-description">Over the Competition</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="faq">
+            <div class="container">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>What is Fortis AI?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Fortis AI is a sophisticated trading automation platform designed to enhance market performance through advanced optimization mechanisms.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>How do I get access?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Hold the minimum required amount of Fortis tokens in your Solana wallet to gain full access to the platform.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Is it secure?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, Fortis AI implements robust security protocols and has undergone comprehensive security audits to ensure reliability.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Which chains are supported?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Currently, Fortis AI operates on the Solana blockchain, with plans to expand support to additional chains.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h4>Command Center</h4>
+                        <div class="footer-contact">
+                            <p><i class="fas fa-envelope"></i> command@fortis.io</p>
+                            <p><i class="fas fa-clock"></i> Operations: 09:00 - 23:00 CET</p>
+                        </div>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Join the Legion</h4>
+                        <a href="#"><i class="fab fa-telegram"></i> Command Channel</a>
+                        <a href="#"><i class="fab fa-twitter"></i> Intelligence Feed</a>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2024 Fortis AI. All rights reserved. | Strength Through Innovation</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>
