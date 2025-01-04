@@ -182,7 +182,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
     window.copyAddress = function() {
-        const address = '0x742d35Cc6634C0532925a3b844Bc454e4438f44e';
+        const address = 'F9TdzTUXPN3hEB7Zyfn4qHc8PyTDZCkarrGTGE9opump';
         navigator.clipboard.writeText(address).then(() => {
             const copyButton = document.querySelector('.copy-button');
             const originalIcon = copyButton.innerHTML;
