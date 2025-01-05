@@ -182,7 +182,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
     window.copyAddress = function() {
-        const address = 'F9TdzTUXPN3hEB7Zyfn4qHc8PyTDZCkarrGTGE9opump';
+        const address = '0x742d35Cc6634C0532925a3b844Bc454e4438f44e';
         navigator.clipboard.writeText(address).then(() => {
             const copyButton = document.querySelector('.copy-button');
             const originalIcon = copyButton.innerHTML;
@@ -228,4 +228,25 @@ function initFAQ() {
 }
 
 // Initialize FAQ when document is loaded
-document.addEventListener('DOMContentLoaded', initFAQ); 
+document.addEventListener('DOMContentLoaded', initFAQ);
+
+// Copy button functionality
+function copyAddress() {
+    const address = 'F9TdzTUXPN3hEB7Zyfn4qHc8PyTDZCkarrGTGE9opump';
+    navigator.clipboard.writeText(address)
+        .then(() => {
+            const copyButton = document.querySelector('.copy-button');
+            const originalIcon = copyButton.innerHTML;
+            copyButton.innerHTML = '<i class="fas fa-check"></i>';
+            setTimeout(() => {
+                copyButton.innerHTML = originalIcon;
+            }, 2000);
+        })
+        .catch(err => {
+            console.error('Failed to copy:', err);
+            alert('Failed to copy address');
+        });
+}
+
+// Make copyAddress available globally
+window.copyAddress = copyAddress; 
